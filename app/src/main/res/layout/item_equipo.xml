@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Imagen del Equipo -->
+        <ImageView
+            android:id="@+id/imagenEquipo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"
+            android:contentDescription="Logo del equipo"
+            android:background="#E8EAF6"
+            android:padding="16dp" />
+
+        <!-- Nombre del Equipo -->
+        <TextView
+            android:id="@+id/nombreEquipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Equipo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp" />
+
+        <!-- Ciudad -->
+        <TextView
+            android:id="@+id/ciudadEquipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+
+        <!-- Botón Detalle -->
+        <Button
+            android:id="@+id/botonDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Ver Detalle"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/boton_redondeado"
+            android:backgroundTint="#FF5252" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
